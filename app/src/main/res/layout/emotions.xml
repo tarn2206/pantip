@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageButton android:id="@+id/reaction_like" style="@style/Emoticon" app:srcCompat="@drawable/reaction_like" />
+    <ImageButton android:id="@+id/reaction_haha" style="@style/Emoticon" app:srcCompat="@drawable/reaction_haha" />
+    <ImageButton android:id="@+id/reaction_love" style="@style/Emoticon" app:srcCompat="@drawable/reaction_love" />
+    <ImageButton android:id="@+id/reaction_impress" style="@style/Emoticon" app:srcCompat="@drawable/reaction_impress" />
+    <ImageButton android:id="@+id/reaction_scary" style="@style/Emoticon" app:srcCompat="@drawable/reaction_scary" />
+    <ImageButton android:id="@+id/reaction_wow" style="@style/Emoticon" app:srcCompat="@drawable/reaction_wow" />
+</LinearLayout>

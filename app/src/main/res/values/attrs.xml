@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="authorColor" format="reference" />
+
+    <attr name="avatar" format="reference" />
+    <attr name="circle" format="reference" />
+    <attr name="circle_noti" format="reference" />
+    <attr name="secondaryBackground" format="reference" />
+    <attr name="selectableSecondaryBackground" format="reference" />
+    <attr name="topicTitleBackgroundColor" format="reference" />
+    <attr name="topicTitleColor" format="reference" />
+    <attr name="topicBgTop" format="reference" />
+    <attr name="topicBgMiddle" format="reference" />
+    <attr name="topicBgBottom" format="reference" />
+    <attr name="commentBgTop" format="reference" />
+    <attr name="commentBgMiddle" format="reference" />
+    <attr name="commentBgBottom" format="reference" />
+    <attr name="replyBgTop" format="reference" />
+    <attr name="replyBgMiddle" format="reference" />
+    <attr name="replyBgBottom" format="reference" />
+    <attr name="statBackground" format="reference" />
+    <attr name="feedbackDivider" format="reference" />
+    <attr name="feedbackDivider2" format="reference" />
+    <attr name="feedbackButtonBg" format="reference" />
+    <attr name="feedbackButtonColor" format="reference" />
+
+    <attr name="barBackground" format="reference" />
+
+    <attr name="tag_bg" format="reference" />
+    <attr name="danger" format="reference" />
+    <attr name="pagerMarginDrawable" format="reference" />
+    <attr name="ripple_color" format="reference" />
+    <attr name="fab_text" format="reference" />
+    <attr name="overlay_color" format="reference" />
+
+    <declare-styleable name="FeedbackButton">
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MyGalleryView">
+        <attr name="autoLayout" format="reference|boolean" />
+    </declare-styleable>
+    <declare-styleable name="PostCommandBar">
+        <attr name="commandText" format="reference|string" />
+        <attr name="selectTag" format="reference|boolean" />
+    </declare-styleable>
+</resources>

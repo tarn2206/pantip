@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_width">400dp</dimen>
+    <dimen name="menu_shadow_width">12dp</dimen>
+    <dimen name="topic_filter">40dp</dimen>
+    <dimen name="avatar_size">36dp</dimen>
+
+    <bool name="wide">false</bool>
+    <bool name="xlarge">false</bool>
+    <dimen name="list_margin">0dp</dimen>
+    <dimen name="comment_padding">-4px</dimen>
+    <dimen name="last_height">14dp</dimen>
+    <dimen name="last_padding">12dp</dimen>
+    <dimen name="spacer">15dp</dimen>
+    <dimen name="avatar_padding">12dp</dimen>
+
+    <dimen name="play">72dp</dimen>
+</resources>

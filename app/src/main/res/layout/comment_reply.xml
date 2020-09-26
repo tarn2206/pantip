@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:orientation="vertical"
+              android:paddingLeft="@dimen/comment_padding" android:paddingRight="@dimen/comment_padding">
+
+    <include android:id="@+id/comment_item" layout="@layout/comment_item" android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+    <View android:id="@+id/last_reply" android:layout_width="match_parent" android:layout_height="10dp"
+          android:layout_marginBottom="@dimen/last_padding" android:background="?attr/commentBgBottom" />
+
+</LinearLayout>

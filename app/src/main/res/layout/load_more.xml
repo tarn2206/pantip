@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <View android:layout_width="match_parent" android:layout_height="1px"
+          android:background="?android:attr/listDivider" android:visibility="gone" />
+    <ProgressBar style="@style/Widget.AppCompat.ProgressBar" android:layout_width="30dp" android:layout_height="30dp"
+                 android:layout_centerInParent="true" android:layout_margin="16dp" />
+</RelativeLayout>

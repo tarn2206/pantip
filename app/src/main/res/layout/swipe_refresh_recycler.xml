@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+      <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="match_parent"
+                                              app:fastScrollEnabled="true"
+                                              app:fastScrollHorizontalThumbDrawable="@drawable/fastscroll_thumb"
+                                              app:fastScrollHorizontalTrackDrawable="@drawable/fastscroll_track"
+                                              app:fastScrollVerticalThumbDrawable="@drawable/fastscroll_thumb"
+                                              app:fastScrollVerticalTrackDrawable="@drawable/fastscroll_track" />
+
+   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+   <tarn.pantip.widget.ContentLoadingProgressBar android:id="@android:id/progress"
+                                                 style="@style/Widget.AppCompat.ProgressBar"
+                                                 android:layout_width="wrap_content"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_gravity="center" />
+
+   <TextView android:id="@+id/text"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginLeft="@dimen/list_margin"
+             android:layout_marginRight="@dimen/list_margin"
+             android:layout_marginTop="24dp"
+             android:drawablePadding="12dp"
+             android:drawableTint="?android:attr/textColorTertiary"
+             android:drawableTop="@drawable/pantip_logo"
+             android:gravity="center_horizontal"
+             android:text="Something went wrong" />
+</merge>

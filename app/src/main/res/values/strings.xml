@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">กระทู้พันทิป</string>
+    <string name="search_hint">ค้นหาในพันทิป</string>
+
+    <string name="login_email">อีเมล / นามแฝง</string>
+    <string name="login_password">รหัสผ่าน</string>
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="logging_in">กำลังเข้าสู่ระบบ&#8230;</string>
+    <string name="logged_out">ออกจากระบบแล้ว</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_forums">เลือกห้อง</string>
+    <string name="menu_tags">แท็ก</string>
+    <string name="menu_notification">แจ้งเตือน</string>
+    <string name="menu_search">ค้นหา</string>
+    <string name="menu_my">หน้าของฉัน</string>
+    <string name="menu_post">ตั้งกระทู้</string>
+    <string name="menu_open">เปิดกระทู้</string>
+    <string name="menu_open_tag">ค้นหาแท็ก</string>
+    <string name="menu_settings">ตั้งค่า</string>
+    <string name="menu_logout">ออกจากระบบ</string>
+    <string name="menu_refresh">โหลดใหม่</string>
+    <string name="menu_reply">ตอบกลับ</string>
+    <string name="menu_share">แชร์</string>
+    <string name="menu_follow">ติดตาม</string>
+    <string name="menu_unfollow">เลิกติดตาม</string>
+    <string name="menu_add_favorite">เพิ่มในกระทู้โปรด</string>
+    <string name="menu_remove_favorite">นำออกจากกระทู้โปรด</string>
+    <string name="menu_browser">เปิดในเว็บบราวเซอร์</string>
+    <string name="menu_delete">ลบ</string>
+
+    <string name="post_topic1">หัวข้อกระทู้</string>
+    <string name="post_topic2">หัวข้อคำถาม</string>
+    <string name="post_topic3">พาดหัวข่าว</string>
+    <string name="post_topic4">หัวข้อโพล</string>
+    <string name="post_topic5">หัวข้อกระทู้รีวิว</string>
+    <string name="post_topic6">ประกาศขายสินค้า</string>
+    <string name="post_review">ชื่อสินค้าหรือร้านค้าที่รีวิว</string>
+    <string name="post_message1">เนื้อหากระทู้</string>
+    <string name="post_message2">รายละเอียดของคำถาม</string>
+    <string name="post_message3">รายละเอียดของข่าว</string>
+    <string name="post_message4">รายละเอียดของโพล</string>
+    <string name="post_message5">รายละเอียดของรีวิว</string>
+    <string name="post_message6">รายละเอียดของสินค้า</string>
+    <string name="add_place">Add Location</string>
+    <string name="post">ส่งข้อความ</string>
+    <string name="comment_hint">แสดงความคิดเห็น</string>
+
+    <string-array name="topic_type">
+        <item>กระทู้สนทนา</item>
+        <item>กระทู้คำถาม</item>
+        <item>กระทู้ข่าว</item>
+        <item>กระทู้โพล</item>
+        <item>กระทู้รีวิว</item>
+        <item>กระทู้ขายของ</item>
+    </string-array>
+    <string-array name="night_mode">
+        <item>ปิด</item>
+        <item>เปิด</item>
+        <item>อัตโนมัติ</item>
+    </string-array>
+    <string-array name="night_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="font_sizes">
+        <item>14 pt</item>
+        <item>15 pt</item>
+        <item>16 pt</item>
+        <item>17 pt</item>
+        <item>18 pt</item>
+        <item>19 pt</item>
+        <item>20 pt</item>
+        <item>21 pt</item>
+    </string-array>
+    <string-array name="font_sizes_values">
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+    </string-array>
+</resources>

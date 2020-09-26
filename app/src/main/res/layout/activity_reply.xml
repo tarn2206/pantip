@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include android:id="@+id/toolbar" layout="@layout/toolbar" />
+
+    <tarn.pantip.widget.PostCommandBar android:id="@+id/command_bar"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:layout_alignParentBottom="true"
+                                       app:commandText="@string/post" />
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_above="@id/command_bar" android:layout_below="@id/toolbar" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <TextView android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:background="?attr/secondaryBackground" android:ellipsize="end" android:maxLines="2"
+                      android:padding="8dp" />
+
+            <EditText android:id="@+id/message" android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:background="@null" android:gravity="top|start" android:hint="@string/comment_hint"
+                      android:autofillHints="@string/comment_hint"
+                      android:inputType="textCapSentences|textAutoComplete|textMultiLine" android:paddingBottom="8dp"
+                      android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

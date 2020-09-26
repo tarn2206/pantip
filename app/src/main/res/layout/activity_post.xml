@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/secondaryBackground">
+
+   <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="?attr/actionBarSize"
+                                      android:layout_alignParentTop="true"
+                                      android:background="@color/colorPrimary"
+                                      android:theme="@style/AppTheme.Toolbar"
+                                      app:contentInsetStartWithNavigation="0dp"
+                                      app:navigationIcon="@drawable/ic_close_white_24dp"
+                                      app:subtitleTextAppearance="@style/ToolbarSubtitleAppearance"
+                                      app:titleTextAppearance="@style/ToolbarTitleAppearance">
+
+      <Spinner android:id="@+id/topic_type"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               android:theme="@style/AppTheme" />
+
+   </androidx.appcompat.widget.Toolbar>
+
+   <tarn.pantip.widget.PostCommandBar android:id="@+id/command_bar"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_alignParentBottom="true"
+                                      app:commandText=" ตั้งกระทู้ "
+                                      app:selectTag="true" />
+
+   <ScrollView android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_above="@id/command_bar"
+               android:layout_below="@id/toolbar"
+               android:fillViewport="true">
+
+      <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="4dp">
+
+         <com.google.android.material.textfield.TextInputEditText android:id="@+id/post_topic"
+                                                          android:layout_width="match_parent"
+                                                          android:layout_height="wrap_content"
+                                                          android:imeOptions="actionNext"
+                                                          android:inputType="textCapSentences|textAutoComplete|textMultiLine"
+                                                          android:maxLength="120" />
+
+         <com.google.android.flexbox.FlexboxLayout android:id="@+id/tags"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   app:flexWrap="wrap" />
+
+         <com.google.android.material.textfield.TextInputLayout android:id="@+id/product_layout"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="8dp"
+                                                        android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/product_name"
+                                                             android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:hint="@string/post_review"
+                                                             android:imeOptions="actionNext"
+                                                             android:inputType="textCapSentences|textAutoComplete"
+                                                             android:maxLength="100"
+                                                             android:maxLines="1" />
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <RatingBar android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" />
+
+         <RadioGroup android:id="@+id/review_type"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:paddingBottom="8dp"
+                     android:visibility="gone">
+
+            <tarn.pantip.widget.TarnCompatCheckBox android:id="@+id/consumer_review"
+                                                   android:layout_width="0dp"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_weight="1"
+                                                   android:paddingLeft="4dp"
+                                                   android:text="รีวิวโดยผู้บริโภค"
+                                                   android:textSize="15sp" />
+
+            <tarn.pantip.widget.TarnCompatCheckBox android:id="@+id/sponsored_review"
+                                                   android:layout_width="0dp"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_weight="1"
+                                                   android:paddingLeft="4dp"
+                                                   android:text="รีวิวโดยมีผู้สนับสนุน"
+                                                   android:textSize="15sp" />
+         </RadioGroup>
+
+         <EditText android:id="@+id/post_message"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="4dp"
+                   android:background="@null"
+                   android:hint="@string/post_message1"
+                   android:autofillHints="@string/post_message1"
+                   android:gravity="top|start"
+                   android:inputType="textCapSentences|textAutoComplete|textMultiLine"
+                   android:minLines="4"
+                   android:padding="4dp" />
+      </LinearLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

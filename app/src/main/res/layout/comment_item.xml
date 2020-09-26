@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:orientation="vertical"
+              android:paddingLeft="@dimen/comment_padding" android:paddingRight="@dimen/comment_padding">
+
+    <RelativeLayout android:id="@+id/author_group" android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/comment_no" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true" android:paddingRight="7dp" android:text="0"
+                  android:textColor="?android:attr/textColorTertiary" />
+
+        <com.google.android.flexbox.FlexboxLayout android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content"
+                                                  android:layout_alignParentLeft="true" android:layout_marginTop="5dp"
+                                                  android:layout_toLeftOf="@id/comment_no"
+                                                  android:paddingLeft="@dimen/avatar_padding" app:alignItems="center">
+            <ImageView android:id="@+id/avatar" android:layout_width="42dp" android:layout_height="42dp"
+                       android:layout_marginTop="3dp" android:background="?attr/circle" app:layout_flexShrink="0" />
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginLeft="8dp" android:layout_marginRight="4dp"
+                          android:orientation="vertical">
+                <TextView android:id="@+id/story_author" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:ellipsize="end"
+                          android:fontFamily="sans-serif-medium" android:maxLines="1" android:text="Author"
+                          android:textColor="?authorColor" />
+
+                <TextView android:id="@+id/time" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="now"
+                          android:textColor="?android:attr/textColorTertiary" />
+            </LinearLayout>
+
+            <ImageView android:id="@+id/edit" android:layout_width="32dp" android:layout_height="32dp"
+                       android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Edit"
+                       android:padding="4dp" android:tint="?attr/authorColor" app:layout_alignSelf="flex_start"
+                       app:layout_flexShrink="0" app:srcCompat="@drawable/ic_edit_white_24dp" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/story_group" android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical" />
+
+    <RelativeLayout android:id="@+id/stat_group" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/stat" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:paddingTop="2dp" android:paddingBottom="2dp" android:text="0 ความรู้สึก" />
+        <TextView android:id="@+id/reply" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true" android:layout_alignBaseline="@id/stat"
+                  android:paddingTop="2dp" android:paddingBottom="2dp" android:text="0 ความคิดเห็นย่อย" />
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/feedback_group" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:orientation="vertical">
+
+        <View android:id="@+id/feedback_divider" android:layout_width="match_parent" android:layout_height="1px"
+              android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginTop="10dp"
+              android:background="?feedbackDivider" />
+
+        <tarn.pantip.widget.NoPressedLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                            android:gravity="center_vertical">
+
+            <tarn.pantip.widget.FeedbackButton android:id="@+id/feedback_vote_button" android:layout_width="0dp"
+                                               android:layout_height="wrap_content" android:layout_weight="1"
+                                               android:text="เนื้อหาดี" app:icon="@drawable/ic_plus_black_24dp" />
+            <tarn.pantip.widget.FeedbackButton android:id="@+id/feedback_emotion_button" android:layout_width="0dp"
+                                               android:layout_height="wrap_content" android:layout_weight="1.5"
+                                               android:text="แสดงความรู้สึก"
+                                               app:icon="@drawable/ic_emoticon_black_24dp" />
+            <tarn.pantip.widget.FeedbackButton android:id="@+id/feedback_reply_button" android:layout_width="0dp"
+                                               android:layout_height="wrap_content" android:layout_weight="1"
+                                               android:text="ตอบกลับ" app:icon="@drawable/ic_comment_24dp" />
+
+        </tarn.pantip.widget.NoPressedLayout>
+
+    </LinearLayout>
+
+    <View android:id="@+id/footer_padding" android:layout_width="match_parent" android:layout_height="@dimen/last_height"
+          android:layout_marginBottom="@dimen/last_padding" />
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="tarn.pantip"
+          android:installLocation="auto">
+
+    <supports-screens android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application android:name=".Pantip" android:icon="@mipmap/ic_launcher"
+                 android:label="@string/app_label" android:roundIcon="@mipmap/ic_launcher_round"
+                 android:theme="@style/Theme.AppCompat.NoActionBar"
+                 android:supportsRtl="false"
+                 android:allowBackup="true"
+                 android:fullBackupContent="true">
+
+        <provider android:name="tarn.pantip.content.FileProvider"
+                  android:authorities="tarn.pantip.fileProvider"
+                  android:grantUriPermissions="true"
+                  android:exported="false">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <provider android:name=".content.SearchSuggestionProvider" android:authorities="tarn.pantip.content.SearchSuggestionProvider"
+                  android:exported="false" />
+
+        <activity android:name=".app.SplashActivity" android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.IntentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" />
+                <data android:host="pantip.com" />
+                <data android:host="m.pantip.com" />
+                <data android:host="www.pantip.com" />
+                <data android:pathPrefix="/topic/" />
+                <data android:pathPrefix="/forum/" />
+                <data android:pathPrefix="/tag/" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.MainActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:windowSoftInputMode="adjustPan|adjustResize">
+            <meta-data android:name="android.app.default_searchable" android:value=".app.SearchActivity" />
+        </activity>
+        <activity android:name=".app.SearchActivity"
+                  android:configChanges="keyboard|keyboardHidden|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:label="ค้นหา" android:launchMode="singleTop"
+                  android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".app.SettingsActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:label="ตั้งค่า">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.TopicActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".app.RecommendActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:label="กระทู้แนะนำ" />
+        <activity android:name=".app.PhotoActivity"
+                  android:configChanges="keyboard|keyboardHidden|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:theme="@style/AppTheme.Transparent" />
+        <activity android:name=".app.NotificationActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:label="แจ้งเตือน" />
+
+        <activity android:name=".app.LoginActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:theme="@style/AppTheme"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".app.MyTopicActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:label="หน้าของฉัน" />
+        <activity android:name=".app.ProfileActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity android:name=".app.PostActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".app.ReplyActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".app.MyGalleryActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:label="คลังรูปภาพของฉัน" />
+        <activity android:name=".app.SelectTagActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:label="เลือกแท็ก" />
+
+        <activity android:name=".app.WebViewActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+</manifest>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/menu_listview"
+          android:layout_width="match_parent" android:layout_height="match_parent"
+          android:divider="@color/drawer_divider" android:listSelector="@drawable/item_background_pantip"
+          android:overScrollMode="never" android:scrollbars="none" android:theme="@style/ThemeOverlay.AppCompat.Dark" />

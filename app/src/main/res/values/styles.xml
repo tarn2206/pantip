@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="overlay_color">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent_color_pantip</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/actionModeBackground</item>
+        <item name="dropDownListViewStyle">@style/AppTheme.ListView.DropDown</item>
+
+        <item name="dialogTheme">@style/AppTheme.Dialog</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog</item>
+
+        <item name="android:listSeparatorTextViewStyle">@style/ListSeparatorPantip</item>
+        <!-- replace default in pre-lollipop device -->
+        <item name="selectableItemBackground">@drawable/item_background_pantip</item>
+        <item name="selectableSecondaryBackground">@drawable/item_background2_pantip</item>
+
+        <item name="android:textColor">@color/primary_text_pantip</item>
+        <item name="android:textColorSecondary">@color/secondary_text_pantip</item>
+        <item name="android:textColorTertiary">@color/tertiary_text_pantip</item>
+        <item name="android:textColorHighlight">@color/highlight_text_pantip</item>
+        <item name="android:textColorLink">@color/accent_color_pantip</item>
+        <item name="android:textColorHint">@color/disable_text_pantip</item>
+
+        <item name="authorColor">@color/author_pantip</item>
+
+        <item name="avatar">@drawable/avatar_pantip</item>
+        <item name="circle">@drawable/circle</item>
+        <item name="circle_noti">@drawable/circle_noti</item>
+        <item name="secondaryBackground">@color/secondary_background_pantip</item>
+        <item name="topicTitleBackgroundColor">@color/topic_title_bg_pantip</item>
+        <item name="topicTitleColor">@color/topic_title_pantip</item>
+        <item name="topicBgTop">@drawable/box_topic_pantip_1</item>
+        <item name="topicBgMiddle">@drawable/box_topic_pantip_2</item>
+        <item name="topicBgBottom">@drawable/box_topic_pantip_3</item>
+        <item name="commentBgTop">@drawable/box_comment_pantip_1</item>
+        <item name="commentBgMiddle">@drawable/box_comment_pantip_2</item>
+        <item name="commentBgBottom">@drawable/box_comment_pantip_3</item>
+        <item name="replyBgTop">@drawable/box_reply_pantip_1</item>
+        <item name="replyBgMiddle">@drawable/box_reply_pantip_2</item>
+        <item name="replyBgBottom">@drawable/box_reply_pantip_3</item>
+        <item name="statBackground">@drawable/comment_stat_bg_pantip</item>
+        <item name="feedbackDivider">@color/feedback_divider_pantip</item>
+        <item name="feedbackDivider2">@color/feedback_divider_pantip</item>
+        <item name="feedbackButtonBg">@drawable/feedback_bg_pantip</item>
+        <item name="feedbackButtonColor">@drawable/feedback_button_pantip</item>
+
+        <item name="barBackground">@color/bar_bg_pantip</item>
+
+        <item name="pagerMarginDrawable">@color/pager_margin_pantip</item>
+        <item name="danger">@color/danger_pantip</item>
+        <item name="tag_bg">@drawable/tag_bg_pantip</item>
+        <item name="fab_text">@color/primary_text_light</item>
+        <item name="ripple_color">@color/ripple_material_light</item>
+        <item name="ratingBarStyle">@style/AppTheme.RatingBar</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background_light</item>
+        <item name="overlay_color">@color/window_background_light</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent_color_light</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/actionModeBackground</item>
+
+        <item name="dialogTheme">@style/AppTheme.Light.Dialog</item>
+        <item name="alertDialogTheme">@style/AppTheme.Light.Dialog</item>
+
+        <item name="android:listSeparatorTextViewStyle">@style/ListSeparatorLight</item>
+
+        <item name="android:textColor">@color/primary_text_light</item>
+        <item name="android:textColorSecondary">@color/secondary_text_light</item>
+        <item name="android:textColorTertiary">@color/tertiary_text_light</item>
+        <item name="android:textColorHighlight">@color/highlight_text_light</item>
+        <item name="android:textColorLink">@color/accent_color_light</item>
+        <item name="android:textColorHint">@color/disable_text_light</item>
+
+        <item name="authorColor">@color/author_light</item>
+        <item name="selectableItemBackground">@drawable/item_background_light</item>
+        <item name="selectableSecondaryBackground">@drawable/item_background2_light</item>
+
+        <item name="avatar">@drawable/avatar_light</item>
+        <item name="circle">@drawable/circle_light</item>
+        <item name="circle_noti">@drawable/circle_noti_light</item>
+        <item name="secondaryBackground">@color/secondary_background_light</item>
+        <item name="topicTitleBackgroundColor">@color/topic_title_bg_light</item>
+        <item name="topicTitleColor">@color/topic_title_light</item>
+        <item name="topicBgTop">@drawable/box_comment_light_1</item>
+        <item name="topicBgMiddle">@drawable/box_comment_light_2</item>
+        <item name="topicBgBottom">@drawable/box_comment_light_3</item>
+        <item name="commentBgTop">@drawable/box_comment_light_1</item>
+        <item name="commentBgMiddle">@drawable/box_comment_light_2</item>
+        <item name="commentBgBottom">@drawable/box_comment_light_3</item>
+        <item name="replyBgTop">@drawable/box_reply_light_1</item>
+        <item name="replyBgMiddle">@drawable/box_reply_light_2</item>
+        <item name="replyBgBottom">@drawable/box_reply_light_3</item>
+        <item name="statBackground">@drawable/comment_stat_bg_light</item>
+        <item name="feedbackDivider">@color/feedback_divider_light</item>
+        <item name="feedbackDivider2">@color/feedback_divider2_light</item>
+        <item name="feedbackButtonBg">@drawable/feedback_bg_light</item>
+        <item name="feedbackButtonColor">@drawable/feedback_button_light</item>
+
+        <item name="barBackground">@color/bar_bg_light</item>
+
+        <item name="pagerMarginDrawable">@color/pager_margin_light</item>
+        <item name="danger">@color/danger_light</item>
+        <item name="tag_bg">@drawable/tag_bg_light</item>
+        <item name="fab_text">@android:color/white</item>
+        <item name="ripple_color">@color/ripple_material_dark</item>
+        <item name="ratingBarStyle">@style/AppTheme.RatingBar</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@drawable/launcher</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <style name="AppTheme.Transparent" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item-->
+    </style>
+
+    <style name="AppTheme.Dialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/pantip_dialog_background</item>
+        <item name="colorAccent">@color/accent_color_pantip</item>
+        <item name="android:textColorHighlight">@color/highlight_text_pantip</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/actionModeBackground</item>
+        <item name="spinnerStyle">@style/AppTheme.Dialog.Spinner</item>
+        <item name="dialogTheme">@style/AppTheme.Dialog</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog</item>
+    </style>
+    <style name="AppTheme.Dialog.Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:popupBackground">@color/dialog_popup_pantip</item>
+    </style>
+
+    <style name="AppTheme.Light.Dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/accent_color_light</item>
+        <item name="android:textColorHighlight">@color/highlight_text_light</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/actionModeBackground</item>
+        <item name="dialogTheme">@style/AppTheme.Light.Dialog</item>
+        <item name="alertDialogTheme">@style/AppTheme.Light.Dialog</item>
+    </style>
+
+    <style name="Base.AppTheme.Button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="height">40dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="@style/AppTheme">
+        <item name="colorControlNormal">@color/textColor</item>
+    </style>
+    <style name="AppTheme.Toolbar.Popup" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Base.AppTheme.Button">
+        <item name="android:background">@drawable/button_pantip</item>
+        <item name="android:textColor">@drawable/button_text_pantip</item>
+    </style>
+
+    <style name="AppTheme.PillButton" parent="Widget.AppCompat.Button">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="height">36dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+
+    <style name="ToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Widget.TextView.ListSeparator" parent="@android:style/Widget.TextView">
+        <!-- layout_width cause error in 2.3 -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ListSeparatorLight" parent="Widget.TextView.ListSeparator">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="ListSeparatorPantip" parent="Widget.TextView.ListSeparator">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TopicTypeSpinner" parent="Theme.AppCompat">
+        <item name="android:textColor">#FFCC00</item>
+    </style>
+
+    <style name="AppTheme.ListView.DropDown" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="background">@color/popupBackground</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="textAppearanceListItemSmall" parent="@style/TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/primary_text_pantip</item>
+    </style>
+    <style name="AppTheme.RatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:maxHeight">36dp</item>
+    </style>
+
+    <style name="BaseToolbarButton" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:background">?attr/controlBackground</item>
+    </style>
+    <style name="toolbarNavigationButton" parent="BaseToolbarButton" />
+
+    <style name="Emoticon">
+        <item name="background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_width">@dimen/emo_size</item>
+        <item name="android:layout_height">@dimen/emo_size</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="match_parent" android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+                                       style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+                                       android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+                                       android:background="@color/colorPrimary"
+                                       android:theme="@style/AppTheme.Toolbar"
+                                       app:contentInsetStartWithNavigation="0dp"
+                                       app:navigationIcon="@drawable/ic_close_white_24dp"
+                                       app:subtitleTextAppearance="@style/ToolbarSubtitleAppearance"
+                                       app:titleTextAppearance="@style/ToolbarTitleAppearance">
+        <Button android:id="@+id/done" style="@style/AppTheme.Button" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="right" android:layout_marginRight="8dp"
+                android:enabled="false" android:text=" เรียบร้อย " />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout android:id="@+id/tags_group" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:background="@color/colorPrimary">
+        <ImageView android:id="@+id/remove_all" style="?attr/toolbarNavigationButtonStyle" android:layout_width="42dp"
+                   android:layout_height="42dp" android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true" android:layout_marginRight="10dp"
+                   android:clickable="true" android:focusable="true"
+                   android:padding="8dp" android:theme="@style/AppTheme"
+                   app:srcCompat="@drawable/ic_close_white_24dp" />
+        <com.google.android.flexbox.FlexboxLayout android:id="@+id/selected_tags" android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:layout_centerVertical="true"
+                                                  android:layout_toLeftOf="@id/remove_all" android:paddingBottom="4dp"
+                                                  android:paddingLeft="5dp" android:paddingTop="4dp"
+                                                  app:flexWrap="wrap" />
+    </RelativeLayout>
+
+    <tarn.pantip.widget.ViewPager android:id="@+id/pager" android:layout_width="match_parent"
+                                  android:layout_height="match_parent" />
+
+    <ListView android:id="@+id/list1" android:layout_width="0dp" android:layout_height="match_parent"
+              android:layout_weight="0.5" android:dividerHeight="1px" android:fadingEdgeLength="0px"
+              android:fastScrollEnabled="false" android:overScrollFooter="@null" />
+
+    <ListView android:id="@+id/list2" android:layout_width="0dp" android:layout_height="match_parent"
+              android:layout_weight="0.5" android:dividerHeight="1px" android:fadingEdgeLength="0px"
+              android:fastScrollEnabled="false" android:overScrollFooter="@null" />
+
+</LinearLayout>

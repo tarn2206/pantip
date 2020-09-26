@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto" app:title="Settings">
+    <Preference app:key="account" app:title="Login" app:iconSpaceReserved="false" />
+
+    <PreferenceCategory app:title="การแสดงผล" app:iconSpaceReserved="false">
+        <ListPreference app:defaultValue="2" app:entries="@array/night_mode"
+            app:entryValues="@array/night_mode_values" app:key="night_mode2"
+            app:negativeButtonText="ยกเลิก" app:persistent="true" app:title="โหมดกลางคืน" app:iconSpaceReserved="false" />
+        <ListPreference app:defaultValue="16" app:entries="@array/font_sizes"
+            app:entryValues="@array/font_sizes_values" app:key="font_size"
+            app:negativeButtonText="ยกเลิก" app:persistent="true" app:title="ขนาดอักษร" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="การใช้ข้อมูล" app:iconSpaceReserved="false">
+        <Preference app:key="clear_search" app:summary="ลบประวัติการค้นหาทั้งหมด"
+            app:title="ลบประวัติการค้นหา" app:iconSpaceReserved="false" />
+        <Preference app:enabled="false" app:key="clear_cache" app:summary="Calculating..."
+            app:title="ลบข้อมูลในแคช" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="เกี่ยวกับกระทู้พันทิป" app:iconSpaceReserved="false">
+        <Preference app:key="open_source_licenses" app:title="ประกาศทางด้านกฎหมาย" app:iconSpaceReserved="false" />
+        <Preference app:key="app_version" app:title="App version" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

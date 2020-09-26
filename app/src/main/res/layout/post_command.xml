@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <View android:layout_width="match_parent"
+         android:layout_height="1px"
+         android:background="?android:attr/textColorHint" />
+
+   <RelativeLayout android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="8dp"
+                   android:paddingRight="8dp">
+
+      <tarn.pantip.widget.TarnCompatImageButton android:id="@+id/select_tag"
+                                                style="?attr/toolbarNavigationButtonStyle"
+                                                android:layout_width="48dp"
+                                                android:layout_height="48dp"
+                                                app:srcCompat="@drawable/ic_tag_white_24dp" />
+
+      <tarn.pantip.widget.TarnCompatImageButton android:id="@+id/pick_image"
+                                                style="?attr/toolbarNavigationButtonStyle"
+                                                android:layout_width="48dp"
+                                                android:layout_height="48dp"
+                                                android:layout_toRightOf="@id/select_tag"
+                                                app:srcCompat="@drawable/ic_photo_white_24dp" />
+
+      <tarn.pantip.widget.TarnCompatImageButton android:id="@+id/emoticons"
+                                                style="?attr/toolbarNavigationButtonStyle"
+                                                android:layout_width="48dp"
+                                                android:layout_height="48dp"
+                                                android:layout_toRightOf="@id/pick_image"
+                                                app:srcCompat="@drawable/ic_emoticon_black_24dp" />
+
+      <tarn.pantip.widget.TarnCompatImageButton android:id="@+id/add_link"
+                                                style="?attr/toolbarNavigationButtonStyle"
+                                                android:layout_width="48dp"
+                                                android:layout_height="48dp"
+                                                android:layout_toRightOf="@id/emoticons"
+                                                app:srcCompat="@drawable/ic_link_black_24dp" />
+
+      <tarn.pantip.widget.TarnCompatImageButton android:id="@+id/add_spoil"
+                                                style="?attr/toolbarNavigationButtonStyle"
+                                                android:layout_width="48dp"
+                                                android:layout_height="48dp"
+                                                android:layout_toRightOf="@id/add_link"
+                                                app:srcCompat="@drawable/ic_spoil_black_24dp" />
+
+      <Button android:id="@+id/action_button"
+              style="@style/AppTheme.Button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true" />
+   </RelativeLayout>
+
+   <RelativeLayout android:id="@+id/gallery_group"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+      <tarn.pantip.widget.MyGalleryView android:id="@+id/gallery"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scrollbars="vertical"
+                                        app:autoLayout="true" />
+
+      <ImageButton android:id="@+id/my_gallery"
+                   android:layout_width="48dp"
+                   android:layout_height="48dp"
+                   android:background="@drawable/gallery_button"
+                   app:srcCompat="@drawable/ic_gallery_white_24dp"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginLeft="12dp"
+                   android:layout_marginBottom="12dp" />
+
+      <tarn.pantip.widget.ContentLoadingProgressBar android:id="@+id/gallery_progress"
+                                             style="@style/Widget.AppCompat.ProgressBar"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+                                             android:layout_centerInParent="true" />
+   </RelativeLayout>
+
+</merge>

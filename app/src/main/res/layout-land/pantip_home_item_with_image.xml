@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_margin"
+                android:layout_marginRight="@dimen/list_margin"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="10dp">
+
+   <ImageView android:id="@+id/image"
+              android:layout_width="240dp"
+              android:layout_height="120dp"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"
+              android:layout_marginEnd="10dp" />
+
+   <RelativeLayout
+       android:id="@+id/stat"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@id/image"
+       android:layout_alignParentBottom="true" >
+
+      <TextView
+          android:id="@+id/comments"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true" />
+
+      <TextView
+          android:id="@+id/timestamp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_toLeftOf="@id/comments"
+          android:ellipsize="end"
+          android:maxLines="1" />
+   </RelativeLayout>
+
+   <TextView android:id="@+id/author"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_toRightOf="@id/image"
+       android:layout_marginTop="3dp"
+       android:layout_marginBottom="2dp"
+       android:ellipsize="end"
+       android:maxLines="1"
+       android:layout_above="@id/stat"
+       android:textColor="?attr/authorColor" />
+
+   <TextView android:id="@+id/title"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="6dp"
+             android:layout_toRightOf="@id/image"
+             android:layout_alignParentTop="true" android:layout_above="@id/author"
+             android:textColor="?android:attr/textColor" />
+
+</RelativeLayout>

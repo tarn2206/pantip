@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- shared color -->
+    <color name="colorPrimary">#3A366B</color>
+    <color name="colorPrimaryDark">#302D4F</color>
+    <color name="colorAccent">#6358da</color>
+    <color name="textColor">#e5ffffff</color>
+
+    <color name="web_progress">#fdc811</color>
+    <color name="drawer_section">#a7abca</color>
+    <color name="drawer_divider">#44a7abca</color>
+    <color name="actionModeBackground">#4b42a4</color>
+    <color name="popupBackground">#3c3963</color>
+
+    <color name="buttonColor">#6358da</color>
+    <color name="disabledButtonColor">#22999999</color>
+    <color name="disabledButtonText">#99999999</color>
+
+    <color name="swipe_refresh_background">#ffffff</color>
+    <color name="swipe_refresh_color1">#6358da</color>
+    <color name="swipe_refresh_color2">#fb8b01</color>
+    <color name="swipe_refresh_color3">#1191fd</color>
+    <color name="swipe_refresh_color4">#f04444</color>
+    <color name="filter_tint">#7772aa</color>
+
+    <color name="bar_color1">#75c9cc</color>
+    <color name="bar_color2">#ffdc89</color>
+    <color name="bar_color3">#fcb468</color>
+    <color name="bar_color4">#90d4f7</color>
+    <color name="bar_color5">#fdc4ec</color>
+    <color name="bar_color6">#c6a69d</color>
+    <color name="bar_color7">#9991f2</color>
+    <color name="bar_color8">#c1cd81</color>
+    <!-- shared color -->
+
+    <color name="primary_text_pantip">#b0ffffff</color>
+    <color name="secondary_text_pantip">#90ffffff</color>
+    <color name="tertiary_text_pantip">#70ffffff</color>
+    <color name="disable_text_pantip">#44ffffff</color>
+    <color name="highlight_text_pantip">#33fee9a0</color>
+    <color name="accent_color_pantip">#fdc811</color>
+
+    <color name="author_pantip">#b3abf3</color>
+    <color name="secondary_background_pantip">#3c3963</color>
+    <color name="topic_title_bg_pantip">#193366</color>
+    <color name="topic_title_pantip">#ffcd05</color>
+    <color name="info_bg_pantip_pressed">#11ffffff</color>
+    <color name="feedback_divider_pantip">#5c597b</color>
+    <color name="bar_bg_pantip">#10ffffff</color>
+    <color name="pager_margin_pantip">#3c3963</color>
+    <color name="danger_pantip">#f09900</color>
+    <color name="tag_bg_pantip">#10ffffff</color>
+    <color name="dialog_popup_pantip">#4f489e</color>
+
+
+    <color name="window_background_light">#f5f5f5</color>
+    <color name="primary_text_light">#c5000000</color>
+    <color name="secondary_text_light">#6d6e70</color>
+    <color name="tertiary_text_light">#8f9296</color>
+    <color name="disable_text_light">#33000000</color>
+    <color name="highlight_text_light">#336358da</color>
+    <color name="accent_color_light">#6659f7</color>
+
+    <color name="author_light">#5a53a2</color>
+    <color name="secondary_background_light">#eeeeee</color>
+    <color name="topic_title_bg_light">#ffffff</color>
+    <color name="topic_title_light">#4b42a4</color>
+    <color name="info_bg_light_pressed">#f0f0f0</color>
+    <color name="feedback_divider_light">#e0e2e5</color>
+    <color name="feedback_divider2_light">#d4d6da</color>
+    <color name="bar_bg_light">#10000000</color>
+    <color name="pager_margin_light">#e5e5e5</color>
+    <color name="danger_light">#ff5533</color>
+    <color name="tag_bg_light">#fffce0</color>
+    <color name="tag_bg_pressed_light">#fde591</color>
+</resources>
